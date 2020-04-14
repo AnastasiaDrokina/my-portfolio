@@ -1,15 +1,16 @@
-// .title {
+.title {
+  font-family: $font-secondary;
+}
 
-// }
+.title--first {
+  font-family: $font-secondary;
+  font-size: 48px;
 
-// .title--first {
-
-// }
+  @include mobile {
+    font-size: 32px;
+  }
+}
 
 // .title--seconde {
-
-// }
-
-// .title--third {
 
 // }

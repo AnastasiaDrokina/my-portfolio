@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <title>Навигация по сайту</title>
-  <meta charset="UTF-8">
+  <include src="head.html"></include>
+  <title>Anastasia Drokina</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Навигация по сайту</h1>
+  <header class="header">
+    <div class="container header__container">
 
-    <ul>
-      <li><a href="page.html">page.html -- Главная</a></li>
-    </ul>
-  </div>
+      <div class="header__wrapper">
+        <svg class="header__logo">
+          <use xlink:href="img/sprite_auto.svg#icon-cat"></use>
+        </svg>
+        <svg class="header__logo">
+          <use xlink:href="img/sprite_auto.svg#icon-matryoshka-doll"></use>
+        </svg>
+        <svg class="header__logo">
+          <use xlink:href="img/sprite_auto.svg#icon-cathedral-of-saint-basil"></use>
+        </svg>
+        <svg class="header__logo">
+          <use xlink:href="img/sprite_auto.svg#icon-russian-hat"></use>
+        </svg>
+        <svg class="header__logo">
+          <use xlink:href="img/sprite_auto.svg#icon-eiffel-tower"></use>
+        </svg>
+        <svg class="header__logo">
+          <use xlink:href="img/sprite_auto.svg#icon-croissant"></use>
+        </svg>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Open menu</span>
+        </button>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link header__link--active" href="#"><span class="visually-hidden">go to section</span> work</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#"><span class="visually-hidden">go to section</span> about</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#"><span class="visually-hidden">go to section</span> skills</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#"><span class="visually-hidden">go to section</span> contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+  </main>
+
+  <footer></footer>
+
+  <include src="footer.html"></include>
+  <include src="script.html"></include>
 </body>
 </html>

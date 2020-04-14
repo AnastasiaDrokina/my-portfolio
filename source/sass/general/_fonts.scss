@@ -1,10 +1,21 @@
-// @font-face {
-//   font-family: "Roboto Condensed";
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: swap;
-//   src:
-//     local("Roboto Condensed"),
-//     url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-//     url("../fonts/RobotoCondensed-Regular.woff") format("woff");
-// }
+@font-face {
+  font-family: "DidactGothic-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    local("DidactGothic-Regular"),
+    url("../fonts/DidactGothic-Regular.woff2") format("woff2"),
+    url("../fonts/DidactGothic-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arimo-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    local("Arimo-Regular"),
+    url("../fonts/Arimo-Regular.woff2") format("woff2"),
+    url("../fonts/Arimo-Regular.woff") format("woff");
+}
