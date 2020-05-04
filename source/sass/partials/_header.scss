@@ -7,10 +7,6 @@
   justify-content: space-between;
   align-items: center;
 
-  @include tablet {
-    justify-content: space-around;
-  }
-
   @include mobile {
     flex-direction: column;
   }
@@ -62,6 +58,13 @@
 
 .header__item {
   margin-right: 30px;
+
+  @include mobile {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
