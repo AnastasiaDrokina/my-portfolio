@@ -9,57 +9,69 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .portfolio__item {
-  margin: 0 50px 50px 0;
+  width: calc(50% - 25px);
+  margin-bottom: 50px;
 
-  @include mobile {
-    margin: 0 30px 30px 0;
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  &:nth-child(1) .work {
-    background-color: $pale-one;
+  @include tablet {
+    width: auto;
+    margin-bottom: 30px;
   }
 
-  &:nth-child(2) .work {
-    background-color: $pale-two;
+  &:nth-child(1) {
+    .work__link, .work__container {
+      background-color: $pale-one;
+    }
   }
 
-  &:nth-child(3) .work {
-    background-color: $pale-three;
+  &:nth-child(2) {
+    .work__link, .work__container {
+      background-color: $pale-two;
+    }
   }
 
-  &:nth-child(4) .work {
-    background-color: $pale-four;
+  &:nth-child(3) {
+    .work__link, .work__container {
+      background-color: $pale-three;
+    }
   }
-}
 
-.portfolio__link {
-  position: relative;
-
-  &:hover .portfolio__container {
-    opacity: 1;
-    visibility: initial;
-    transform: none;
+  &:nth-child(4) {
+    .work__link, .work__container {
+      background-color: $pale-four;
+    }
   }
-}
 
-.portfolio__container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  z-index: 1;
-  margin-right: 10px;
-  margin-left: -10px;
-  width: calc(100% + 63px);
-  background-color: $pale-one;
-  border-top-right-radius: 2%;
-  border-bottom-right-radius: 2%;
-  transition: all 0.5s;
-  transform: translateX(-100%);
-  opacity: 0;
-  visibility: hidden;
+  &:nth-child(even) {
+    .work__link {
+      &:hover,
+      &:focus {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    .work__link:hover + .work__container,
+    .work__link:focus + .work__container {
+      transform: translateX(-100%);
+    }
+
+    .work__container {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 2%;
+      border-bottom-left-radius: 2%;
+    }
+  }
 }

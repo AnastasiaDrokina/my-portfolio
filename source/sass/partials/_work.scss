@@ -1,11 +1,39 @@
 .work {
+  position: relative;
+
+  @include desktop {
+    &.is-hover {
+      z-index: 1;
+    }
+  }
+}
+
+.work__link {
   display: block;
   padding: 80px;
-  background-color: $pale-one;
   border-radius: 2%;
+  background-color: $pale-one;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:hover + .work__container,
+  &:focus + .work__container {
+    visibility: visible;
+    transform: translateX(100%);
+  }
 
   @include tablet {
-    padding: 60px;
+    padding: 40px;
+
+    &:hover + .work__container,
+    &:focus + .work__container {
+      transform: none;
+    }
   }
 
   @include mobile {
@@ -14,10 +42,53 @@
 
   img {
     border-radius: 2%;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 
     @include mobile {
       width: 300px;
+    }
+  }
+}
+
+.work__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  // width: calc(100% + 63px);
+  // margin-right: 10px;
+  // margin-left: -10px;
+  padding: 80px;
+  background-color: $pale-one;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+  transition: all .5s;
+  visibility: hidden;
+
+  @include tablet {
+    position: static;
+    visibility: visible;
+    transform: none;
+    padding: 40px;
+  }
+
+  h3 {
+    font-family: $font-secondary;
+    color: $blue;
+  }
+
+  p {
+    color: $black;
+    margin-bottom: 25px;
+  }
+
+  h3, p {
+    font-size: 18px;
+
+    @include tablet {
+      font-size: 14px;
     }
   }
 }

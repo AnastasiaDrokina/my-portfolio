@@ -10,6 +10,12 @@
   text-decoration: none;
 }
 
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 // Styleguide
 @mixin hover-opacity {
   transition: opacity $transition-func $transition-time;
@@ -20,8 +26,8 @@
 }
 
 // Media
-@mixin desktop-middle {
-  @media (max-width: $width-desktop-middle) {
+@mixin desktop {
+  @media (min-width: $width-desktop) {
     @content;
   }
 }
