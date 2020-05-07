@@ -1,8 +1,14 @@
-.about__container {
-  display: flex;
-  justify-content: space-between;
+.about__img {
+  border-radius: 15px;
 }
 
-.about__text {
-  width: 50%;
+@include tablet-min {
+  .about__container {
+    display: flex;
+  }
+
+  .about__text {
+    width: 50%;
+    margin-right: auto;
+  }
 }

@@ -7,6 +7,35 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
+  (function () {
+    var anchors = document.querySelectorAll("a[href^=\"#\"]");
+    anchors.forEach(function (anchor) {
+      anchor.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        var href = anchor.getAttribute("href");
+        var target = document.querySelector(href);
+
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  })();
+};
+
+exports.default = _default;
+
+},{}],2:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
   var logos = document.querySelectorAll(".header__logo");
   var logosLength = logos.length;
   var randomNumber = Math.floor(Math.random() * logosLength);
@@ -15,7 +44,7 @@ var _default = function _default() {
 
 exports.default = _default;
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50,7 +79,7 @@ var _default = function _default() {
 
 exports.default = _default;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -86,7 +115,7 @@ var _default = function _default() {
 
 exports.default = _default;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 var _menu = _interopRequireDefault(require("./modules/menu.js"));
@@ -95,10 +124,13 @@ var _logo = _interopRequireDefault(require("./modules/logo.js"));
 
 var _work = _interopRequireDefault(require("./modules/work.js"));
 
+var _anchors = _interopRequireDefault(require("./modules/anchors.js"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _menu.default)();
 (0, _logo.default)();
 (0, _work.default)();
+(0, _anchors.default)();
 
-},{"./modules/logo.js":1,"./modules/menu.js":2,"./modules/work.js":3}]},{},[4]);
+},{"./modules/anchors.js":1,"./modules/logo.js":2,"./modules/menu.js":3,"./modules/work.js":4}]},{},[5]);
