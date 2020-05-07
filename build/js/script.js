@@ -58,21 +58,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var slider = function slider() {
-  return true;
-};
-
-var _default = slider;
-exports.default = _default;
-
-},{}],4:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
 var _default = function _default() {
   var works = document.querySelectorAll(".work");
   works.forEach(function (work) {
@@ -101,10 +86,8 @@ var _default = function _default() {
 
 exports.default = _default;
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
-
-var _slider = _interopRequireDefault(require("./modules/slider.js"));
 
 var _menu = _interopRequireDefault(require("./modules/menu.js"));
 
@@ -114,9 +97,8 @@ var _work = _interopRequireDefault(require("./modules/work.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _slider.default)();
 (0, _menu.default)();
 (0, _logo.default)();
 (0, _work.default)();
 
-},{"./modules/logo.js":1,"./modules/menu.js":2,"./modules/slider.js":3,"./modules/work.js":4}]},{},[5]);
+},{"./modules/logo.js":1,"./modules/menu.js":2,"./modules/work.js":3}]},{},[4]);

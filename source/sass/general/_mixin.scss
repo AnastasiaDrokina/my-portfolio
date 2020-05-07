@@ -26,7 +26,7 @@
 }
 
 // Media
-@mixin desktop {
+@mixin desktop-min {
   @media (min-width: $width-desktop) {
     @content;
   }
@@ -34,6 +34,12 @@
 
 @mixin tablet {
   @media (max-width: $width-desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet-min {
+  @media (min-width: $width-tablet) {
     @content;
   }
 }

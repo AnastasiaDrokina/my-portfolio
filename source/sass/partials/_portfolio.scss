@@ -5,73 +5,11 @@
 }
 
 .portfolio__list {
-  @include list-reset;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @include tablet {
     flex-direction: column;
-  }
-}
-
-.portfolio__item {
-  width: calc(50% - 25px);
-  margin-bottom: 50px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @include tablet {
-    width: auto;
-    margin-bottom: 30px;
-  }
-
-  &:nth-child(1) {
-    .work__link, .work__container {
-      background-color: $pale-one;
-    }
-  }
-
-  &:nth-child(2) {
-    .work__link, .work__container {
-      background-color: $pale-two;
-    }
-  }
-
-  &:nth-child(3) {
-    .work__link, .work__container {
-      background-color: $pale-three;
-    }
-  }
-
-  &:nth-child(4) {
-    .work__link, .work__container {
-      background-color: $pale-four;
-    }
-  }
-
-  &:nth-child(even) {
-    .work__link {
-      &:hover,
-      &:focus {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-    }
-
-    .work__link:hover + .work__container,
-    .work__link:focus + .work__container {
-      transform: translateX(-100%);
-    }
-
-    .work__container {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-top-left-radius: 2%;
-      border-bottom-left-radius: 2%;
-    }
   }
 }
