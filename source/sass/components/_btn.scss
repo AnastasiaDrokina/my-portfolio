@@ -4,6 +4,10 @@
   @include btn-reset;
 }
 
-// .btn--main {
-
-// }
+.btn--main {
+  border: 1px solid $grey;
+  width: 100%;
+  padding: 10px 20px;
+  margin-right: auto;
+  margin-left: auto;
+}

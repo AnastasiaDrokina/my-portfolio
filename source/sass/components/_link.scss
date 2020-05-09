@@ -1,0 +1,14 @@
+.link {
+  @include link-reset;
+}
+
+.link--cv {
+  color: $grey;
+  transition: color $transition-time $transition-func;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $black;
+  }
+}

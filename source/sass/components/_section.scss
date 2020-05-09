@@ -6,29 +6,8 @@
   }
 }
 
-.section__title {
-  font-family: $font-secondary;
-  font-size: 48px;
-  margin: 0 0 40px 0;
-
-  @include mobile {
-    margin-bottom: 20px;
-    font-size: 32px;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 150px;
-    margin-top: 40px;
-    border-bottom: 1px solid $grey-light;
-
-    @include mobile {
-      margin-top: 20px;
-    }
-  }
-}
-
 .section__text {
-  margin-bottom: 40px;
+  @include tablet-min {
+    margin-bottom: 40px;
+  }
 }

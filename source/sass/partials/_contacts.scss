@@ -1,0 +1,8 @@
+.contacts__form {
+  padding: 30px 15px;
+
+  @include tablet-min {
+    display: flex;
+    padding: 50px 15px;
+  }
+}

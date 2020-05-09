@@ -42,7 +42,7 @@
             <a class="header__link" href="#about"><span class="visually-hidden">go to section</span> about</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#"><span class="visually-hidden">go to section</span> skills</a>
+            <a class="header__link" href="#skills"><span class="visually-hidden">go to section</span> skills</a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#"><span class="visually-hidden">go to section</span> contacts</a>
@@ -56,7 +56,7 @@
   <main>
     <section class="portfolio section">
       <div class="container">
-        <h1 class="section__title">Anastasia Drokina</h1>
+        <h1 class="title title--section title--first">Anastasia Drokina</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <div class="portfolio__list">
@@ -176,17 +176,71 @@
     <section class="about section" id="about">
       <div class="container about__container">
         <div class="about__text">
-          <h2 class="section__title">About me</h2>
+          <h2 class="title title--section title--first">About me</h2>
           <p class="section__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum provident et dignissimos magnam, quod vero nihil doloribus quia, delectus repudiandae incidunt minima sit doloremque ab hic asperiores corrupti? Aperiam, ad!</p>
+          <a class="link link--cv" href="anastasia drokina cv.pdf">download my cv</a>
         </div>
         <picture>
           <source type="image/webp" srcset="img/ND.webp">
-            <img class="about__img" src="img/ND.jpg" width="350" height="400" alt="Photo of Anastasia Drokina">
+            <img class="about__img" src="img/ND.jpg" width="400" height="300" alt="Photo of Anastasia Drokina">
         </picture>
       </div>
     </section>
+
+    <section class="skills section" id="skills">
+      <div class="container skills__container">
+        <div class="skills__col">
+          <h2 class="title title--section title--second">Experience</h2>
+          <p class="skills__date">2019-2020</p>
+          <p class="skills__description">Lorem, ipsum dolor sit amet</p>
+        </div>
+        <div class="skills__col">
+          <h2 class="title title--section title--second">Skills</h2>
+          <p class="skills__description">Lorem</p>
+          <p class="skills__description">Lorem</p>
+          <p class="skills__description">Lorem</p>
+        </div>
+        <div class="skills__col">
+          <h2 class="title title--section title--second">Knowledge</h2>
+          <p class="skills__description">Lorem</p>
+          <p class="skills__description">Lorem</p>
+          <p class="skills__description">Lorem</p>
+          <p class="skills__description">Lorem</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <footer class="footer contacts">
+    <div class="container section contacts__form">
+      <div>
+        <h2 class="title title--section title--first">Write me</h2>
+        <p class="section__text">Lorem, ipsum dolor minima sit doloremque ab hic asperiores corrupti?</p>
+      </div>
+        <form class="form" method="GET">
+          <label class="visually-hidden" for="name">Name</label>
+          <input type="text" name="name-field" id="name" placeholder="Name" required>
+          <label class="visually-hidden" for="email">Email</label>
+          <input type="email" name="email-field" id="email" placeholder="Email" required>
+          <textarea name="message-field" id="message" placeholder="Your message" required></textarea>
+          <label class="visually-hidden" for="message">Your message</label>
+
+          <button class="btn btn--main" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container section socials">
+      <p class="copyright">© 2020 Anastasia Drokina</p>
+      <p>The only way to do great is to love what you do.</p>
+      <ul>
+        <li>
+          <a class="social__link" target="_blank" href="https://github.com/AnastasiaDrokina" aria-label="My github">
+        </li>
+        <li>
+          <a class="social__link" target="_blank" href="skype:amadare27?chat" aria-label="My skype">
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <include src="script.html"></include>
 </body>

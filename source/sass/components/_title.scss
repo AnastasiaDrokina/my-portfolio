@@ -1,0 +1,37 @@
+.title {
+  font-family: $font-secondary;
+}
+
+.title--section {
+  &::after {
+    content: "";
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    border-bottom: 1px solid $grey-light;
+
+    @include tablet-min {
+      margin-top: 40px;
+    }
+  }
+}
+
+.title--first {
+  margin-bottom: 20px;
+  font-size: 32px;
+
+  @include tablet-min {
+    font-size: 48px;
+    margin: 0 0 40px 0;
+  }
+}
+
+.title--second {
+  margin-bottom: 20px;
+  font-size: 32px;
+
+  @include tablet-min {
+    font-size: 36px;
+    margin: 0 0 40px 0;
+  }
+}
