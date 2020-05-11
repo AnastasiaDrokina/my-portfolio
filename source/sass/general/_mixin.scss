@@ -25,6 +25,21 @@
   }
 }
 
+@function unfoldTransition($property) {
+  @return $property $transition-func $transition-time;
+}
+
+@mixin transitions($transitions...) {
+  $unfoldedTransitions:();
+
+  @each $transition in $transitions {
+    $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+  }
+
+  transition: $unfoldedTransitions;
+}
+
+
 // Media
 @mixin desktop-min {
   @media (min-width: $width-desktop) {

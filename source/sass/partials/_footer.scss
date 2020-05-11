@@ -1,3 +1,15 @@
 .footer {
   background-color: $grey-main;
 }
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include tablet-min {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

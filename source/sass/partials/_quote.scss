@@ -1,0 +1,9 @@
+.quote {
+  margin: 0 0 40px 0;
+  font-style: italic;
+  color: $grey;
+
+  @include tablet-min {
+    margin-bottom: 0;
+  }
+}
