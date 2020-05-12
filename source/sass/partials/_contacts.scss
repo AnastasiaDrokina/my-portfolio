@@ -1,3 +1,8 @@
+.contacts__col {
+  @include tablet-min {
+    width: 50%;
+  }
+}
 .contacts__form {
   padding: 30px 15px;
 

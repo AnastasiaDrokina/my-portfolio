@@ -7,14 +7,22 @@
     width: 100%;
     padding: 5px 10px;
     margin-bottom: 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    @include transitions(border);
 
     &::placeholder {
       color: $grey;
     }
+
+    &:focus {
+      outline: none;
+      border-color: $grey;
+    }
   }
 
   textarea {
-    resize: none;
     min-height: 120px;
+    resize: none;
   }
 }

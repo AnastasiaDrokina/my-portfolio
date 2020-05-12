@@ -1,16 +1,16 @@
 export default () => {
-  const btnToggle = document.querySelector(`.header__toggle`);
-  const menuNav = document.querySelector(`.header__nav`);
-  const menuLinks = document.querySelectorAll(`.header__link`);
+  const btnToggle = document.querySelector(`.js-header-toggle`);
+  const menuNav = document.querySelector(`.js-header-nav`);
+  const menuLinks = document.querySelectorAll(`.js-header-link`);
 
   // Open and close menu
   btnToggle.addEventListener(`click`, function () {
-    if (!menuNav.classList.contains(`header__nav--opened`)) {
-      menuNav.classList.add(`header__nav--opened`);
-      btnToggle.classList.add(`header__toggle--opened`);
+    if (!menuNav.classList.contains(`is-opened`)) {
+      menuNav.classList.add(`is-opened`);
+      btnToggle.classList.add(`is-opened`);
     } else {
-      menuNav.classList.remove(`header__nav--opened`);
-      btnToggle.classList.remove(`header__toggle--opened`);
+      menuNav.classList.remove(`is-opened`);
+      btnToggle.classList.remove(`is-opened`);
     }
   });
 
@@ -18,9 +18,9 @@ export default () => {
   menuLinks.forEach((menuLink) => {
     menuLink.addEventListener(`click`, function () {
       menuLinks.forEach((link) => {
-        link.classList.remove(`header__link--active`);
+        link.classList.remove(`is-active`);
       });
-      menuLink.classList.add(`header__link--active`);
+      menuLink.classList.add(`is-active`);
     });
   });
 };

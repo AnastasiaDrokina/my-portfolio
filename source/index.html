@@ -10,33 +10,33 @@
     <div class="container header__container">
 
       <div class="header__wrapper">
-        <svg class="header__logo">
+        <svg class="header__logo js-header-logo">
           <use xlink:href="img/sprite_auto.svg#icon-cat"></use>
         </svg>
-        <svg class="header__logo">
+        <svg class="header__logo js-header-logo">
           <use xlink:href="img/sprite_auto.svg#icon-matryoshka-doll"></use>
         </svg>
-        <svg class="header__logo">
+        <svg class="header__logo js-header-logo">
           <use xlink:href="img/sprite_auto.svg#icon-cathedral-of-saint-basil"></use>
         </svg>
-        <svg class="header__logo">
+        <svg class="header__logo js-header-logo">
           <use xlink:href="img/sprite_auto.svg#icon-russian-hat"></use>
         </svg>
-        <svg class="header__logo">
+        <svg class="header__logo js-header-logo">
           <use xlink:href="img/sprite_auto.svg#icon-eiffel-tower"></use>
         </svg>
-        <svg class="header__logo">
+        <svg class="header__logo js-header-logo">
           <use xlink:href="img/sprite_auto.svg#icon-croissant"></use>
         </svg>
-        <button class="header__toggle" type="button">
+        <button class="header__toggle js-header-toggle" type="button">
           <span class="visually-hidden">Open menu</span>
         </button>
       </div>
 
-      <nav class="header__nav">
+      <nav class="header__nav js-header-nav">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link header__link--active" href="#"><span class="visually-hidden">go to section</span> work</a>
+            <a class="header__link is-active js-header-link" href="#work"><span class="visually-hidden">go to section</span> work</a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#about"><span class="visually-hidden">go to section</span> about</a>
@@ -54,14 +54,15 @@
   </header>
 
   <main>
-    <section class="portfolio section">
+
+    <section class="portfolio section" id="work">
       <div class="container">
         <h1 class="title title--section title--first">Anastasia Drokina</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <div class="portfolio__list">
           <article class="portfolio__item work">
-            <a class="work__link" href="#" aria-label="">
+            <a class="work__link" href="#" aria-label="Go to fitnes-center">
               <picture>
                 <source type="image/webp" srcset="img/fitnes-center-index.webp">
                 <img src="img/fitnes-center-index.jpg" width="350" height="400" alt="Image fitnes-center">
@@ -105,7 +106,7 @@
           </article>
 
           <article class="portfolio__item work">
-            <a class="work__link" href="#" aria-label="">
+            <a class="work__link" href="#" aria-label="Go to keksobooking">
               <picture>
                 <source type="image/webp" srcset="img/keksobooking.webp">
                 <img src="img/keksobooking.jpg" width="350" height="400" alt="Image keksobooking">
@@ -149,7 +150,7 @@
           </article>
 
           <article class="portfolio__item work">
-            <a class="work__link" href="#" aria-label="">
+            <a class="work__link" href="#" aria-label="Go to device">
               <picture>
                 <source type="image/webp" srcset="img/device-index.webp">
                 <img src="img/device-index.jpg" width="350" height="400" alt="Image device">
@@ -213,20 +214,24 @@
 
   <footer class="footer contacts" id="contacts">
     <div class="container section contacts__form">
-      <div>
+      <div class="contacts__col">
         <h2 class="title title--section title--first">Write me</h2>
         <p class="section__text">Lorem, ipsum dolor minima sit doloremque ab hic asperiores corrupti?</p>
       </div>
-        <form class="form" method="GET">
-          <label class="visually-hidden" for="name">Name</label>
-          <input type="text" name="name-field" id="name" placeholder="Name" required>
-          <label class="visually-hidden" for="email">Email</label>
-          <input type="email" name="email-field" id="email" placeholder="Email" required>
-          <textarea name="message-field" id="message" placeholder="Your message" required></textarea>
-          <label class="visually-hidden" for="message">Your message</label>
+      <div class="contacts__col">
+        <div class="kwes-form">
+          <form class="form" method="POST" action="https://kwes.io/api/foreign/forms/i8qQXnPMkgQXrFzhP6YG" mode="test">
+            <label class="visually-hidden" for="name">Name</label>
+            <input type="text" name="name-field" id="name" placeholder="Name" required>
+            <label class="visually-hidden" for="email">Email</label>
+            <input type="email" name="email-field" id="email" placeholder="Email" required rules="email">
+            <label class="visually-hidden" for="message">Your message</label>
+            <textarea name="message-field" id="message" placeholder="Your message" required></textarea>
 
-          <button class="btn btn--main" type="submit">Submit</button>
-        </form>
+            <button class="btn btn--main" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="container section footer__bottom">
       <div>

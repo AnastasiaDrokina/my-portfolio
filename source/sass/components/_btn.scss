@@ -1,13 +1,19 @@
-@import "../general/mixin.scss";
-
 .btn {
   @include btn-reset;
 }
 
 .btn--main {
-  border: 1px solid $grey;
   width: 100%;
   padding: 10px 20px;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: $blue;
+  color: $white;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  border-radius: 5px;
+  @include transitions(background);
+
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 10%);
+  }
 }
