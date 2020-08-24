@@ -12,27 +12,29 @@
     border-bottom: 1px solid $grey-light;
 
     @include tablet-min {
-      margin-top: 40px;
+      margin-top: 30px;
     }
   }
 }
 
 .title--first {
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 32px;
 
   @include tablet-min {
-    font-size: 48px;
     margin: 0 0 40px 0;
+    font-size: 48px;
   }
 }
 
 .title--second {
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 32px;
 
   @include tablet-min {
-    font-size: 36px;
     margin: 0 0 40px 0;
+    font-size: 36px;
   }
 }

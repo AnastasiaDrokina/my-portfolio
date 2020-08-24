@@ -39,6 +39,7 @@
 
   @include tablet-min {
     flex: 1 0 350px;
+    max-width: 350px;
     padding: 40px;
 
     &:hover + .work__container,
@@ -49,6 +50,7 @@
 
   @include desktop-min {
     padding: 80px;
+    max-width: none;
     background: inherit;
 
     &:hover + .work__container,
@@ -99,9 +101,14 @@
     font-size: 14px;
     color: $black;
   }
+
+  .work__subtitle {
+    font-size: 18px;
+  }
 }
 
 .work__title {
+  margin-bottom: 10px;
   font-family: $font-secondary;
   font-size: 24px;
   color: $black;

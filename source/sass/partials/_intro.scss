@@ -1,0 +1,7 @@
+.intro {
+  margin-bottom: 30px;
+
+  @include tablet-min {
+    margin-bottom: 60px;
+  }
+}

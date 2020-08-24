@@ -1,8 +1,8 @@
 .section {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 
-  @include mobile {
-    padding-bottom: 30px;
+  @include tablet-min {
+    padding-bottom: 60px;
   }
 }
 

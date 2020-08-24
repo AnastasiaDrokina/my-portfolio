@@ -9,16 +9,16 @@
     url("../fonts/DidactGothic-Regular.woff") format("woff");
 }
 
-// @font-face {
-//   font-family: "Arimo-Regular";
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: swap;
-//   src:
-//     local("Arimo-Regular"),
-//     url("../fonts/Arimo-Regular.woff2") format("woff2"),
-//     url("../fonts/Arimo-Regular.woff") format("woff");
-// }
+@font-face {
+  font-family: "Arimo-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    local("Arimo-Regular"),
+    url("../fonts/Arimo-Regular.woff2") format("woff2"),
+    url("../fonts/Arimo-Regular.woff") format("woff");
+}
 
 @font-face {
   font-family: "Montserrat-Regular";

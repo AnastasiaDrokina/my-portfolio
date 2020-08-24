@@ -1,14 +1,21 @@
 .skills__container {
   display: flex;
   flex-direction: column;
+
   @include tablet-min {
     flex-direction: row;
   }
 }
 
 .skills__col {
+  margin-bottom: 15px;
+
   @include tablet-min {
     width: calc(33.3333%);
     margin: 0 15px 0 0;
   }
+}
+
+.skills__date {
+  font-weight: bold;
 }
