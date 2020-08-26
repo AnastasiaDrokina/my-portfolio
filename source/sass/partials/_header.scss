@@ -1,5 +1,10 @@
 .header {
   padding: 30px 0;
+
+  @include mobile {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .header__container {
@@ -76,6 +81,7 @@
 .header__link {
   color: $grey;
   transition: color $transition-time $transition-func;
+  text-decoration: none;
 
   &:hover,
   &:focus {

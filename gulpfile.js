@@ -48,8 +48,8 @@ function css() {
 function img() {
   return src(`source/img/**/*.{jpg,png,svg}`)
     .pipe(imagemin([
-      imagemin.mozjpeg({quality: 75, progressive: true}),
-      imagemin.optipng({optimizationLevel: 5}),
+      // imagemin.mozjpeg({quality: 75, progressive: true}),
+      // imagemin.optipng({optimizationLevel: 5}),
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},
@@ -63,7 +63,7 @@ function img() {
 
 function imgWebp() {
   return src(`build/img/**/*.{jpg,png}`)
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 100}))
     .pipe(dest(`build/img/`));
 }
 
@@ -126,6 +126,7 @@ function copy() {
   return src([
     `source/fonts/**/*.{woff,woff2}`,
     `source/img/**`,
+    `source/files/**`,
     `source//*.ico`
   ], {
     base: `source`

@@ -1,12 +1,21 @@
 .link {
-  @include link-reset;
+  display: inline-block;
+  color: $grey;
+  transition: color $transition-time $transition-func, border $transition-time $transition-func;
+  text-decoration: none;
+  border-bottom: 1px solid $grey-light;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    border-color: $black;
+  }
 }
 
-.link--cv {
-  display: inline-block;
+.link--ghost {
   margin: 15px 0;
-  color: $grey;
-  transition: color $transition-time $transition-func;
+  padding: 15px;
+  border: 1px solid $grey-light;
 
   @include tablet-min {
     margin-top: 30px;
@@ -15,7 +24,7 @@
 
   &:hover,
   &:focus {
-    text-decoration: none;
     color: $black;
+    border-color: $black;
   }
 }
