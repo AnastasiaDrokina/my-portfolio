@@ -7,7 +7,10 @@
 }
 
 .section__text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
   @include md {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }

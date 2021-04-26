@@ -3,17 +3,27 @@
 }
 
 .btn--main {
+  display: inline-block;
   width: 100%;
   padding: 10px 20px;
   background-color: $yellow;
-  color: $white;
-  font-family: $font-secondary;
-  text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  color: $black;
+  font-family: $font-roboto-medium;
   @include transitions(background);
 
   &:hover,
   &:focus {
     background-color: darken($yellow, 10%);
+  }
+}
+
+.btn--sm {
+  margin: 15px 0;
+
+  @include md {
+    width: 200px;
   }
 }

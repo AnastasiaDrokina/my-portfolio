@@ -8,39 +8,42 @@
     content: "";
     display: block;
     width: 150px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 1px solid $grey-light;
 
+    @include sm {
+      margin-top: 15px;
+    }
+
     @include md {
-      margin-top: 30px;
+      margin-top: 20px;
     }
   }
 }
 
 .title--first {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
   font-size: 30px;
   color: $black;
 
   @include sm {
-    margin-bottom: 32px;
-    font-size: 50px;
+    font-size: 42px;
   }
 
   @include lg {
-    margin-bottom: 20px;
-    font-size: 42px;
+    font-size: 50px;
   }
 }
 
 .title--second {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 32px;
+  margin: 0;
+  font-size: 28px;
+
+  @include sm {
+    font-size: 32px;
+  }
 
   @include md {
-    margin: 0 0 40px 0;
     font-size: 36px;
   }
 }
