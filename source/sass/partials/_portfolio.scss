@@ -8,8 +8,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
 
-  @include tablet {
-    flex-direction: column;
+  @include lg {
+    flex-direction: row;
   }
 }

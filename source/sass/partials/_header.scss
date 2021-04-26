@@ -1,19 +1,15 @@
 .header {
   padding: 15px 0;
-
-  // @include mobile {
-  //   padding-top: 15px;
-  //   padding-bottom: 15px;
-  // }
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 
-  @include mobile {
-    flex-direction: column;
+  @include sm {
+    flex-direction: row;
   }
 }
 
@@ -21,10 +17,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
 
-  @include mobile {
-    width: 100%;
-    margin-bottom: 10px;
+  @include sm {
+    width: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -33,19 +31,21 @@
 
   &.is-active {
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 
-    @include mobile {
-      width: 40px;
-      height: 40px;
+    @include sm {
+      width: 70px;
+      height: 70px;
     }
   }
 }
 
 .header__nav {
-  @include mobile {
-    display: none;
+  display: none;
+
+  @include sm {
+    display: block;
   }
 
   &.is-opened {
@@ -56,25 +56,26 @@
 .header__list {
   @include list-reset;
   display: flex;
+  flex-direction: column;
 
-  @include mobile {
-    flex-direction: column;
+  @include sm {
+    flex-direction: row;
   }
 }
 
 .header__item {
   margin-right: 40px;
-
-  @include mobile {
-    margin-bottom: 10px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+  margin-bottom: 10px;
 
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @include sm {
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -107,7 +108,9 @@
 
 .header__toggle {
   @include btn-reset;
-  display: none;
+  display: block;
+  width: 20px;
+  height: 20px;
   margin-left: auto;
   background: url("../img/icons/icon-menu.svg") center no-repeat transparent;
   background-size: contain;
@@ -116,9 +119,9 @@
     background-image: url("../img/icons/icon-croix.svg");
   }
 
-  @include mobile {
-    display: block;
-    width: 20px;
-    height: 20px;
+  @include sm {
+    display: none;
+    width: auto;
+    height: auto;
   }
 }

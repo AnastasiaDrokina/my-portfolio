@@ -1,7 +1,7 @@
 .intro {
   margin-bottom: 30px;
 
-  @include tablet-min {
+  @include md {
     margin-bottom: 60px;
   }
 }

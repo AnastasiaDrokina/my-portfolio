@@ -3,7 +3,7 @@
   font-style: italic;
   color: $grey;
 
-  @include tablet-min {
+  @include md {
     margin-bottom: 0;
   }
 }

@@ -16,11 +16,11 @@
     background-color: $pale-four;
   }
 
-  @include tablet-min {
+  @include md {
     display: flex;
   }
 
-  @include desktop-min {
+  @include lg {
     width: calc(50% - 25px);
     margin-bottom: 50px;
 
@@ -37,7 +37,7 @@
   text-align: center;
   transition: 0s all 0.3s;
 
-  @include tablet-min {
+  @include md {
     flex: 1 0 350px;
     max-width: 350px;
     padding: 40px;
@@ -48,7 +48,7 @@
     }
   }
 
-  @include desktop-min {
+  @include lg {
     padding: 80px;
     max-width: none;
     background: inherit;
@@ -66,7 +66,7 @@
     border-radius: 15px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 
-    @include tablet-min {
+    @include md {
       width: auto;
     }
   }
@@ -75,7 +75,7 @@
 .work__container {
   padding: 30px;
 
-  @include desktop-min {
+  @include lg {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -91,7 +91,7 @@
     font-size: 16px;
     color: $yellow;
 
-    @include tablet-min {
+    @include md {
       font-size: 18px;
     }
   }
@@ -113,12 +113,12 @@
   font-size: 24px;
   color: $black;
 
-  @include tablet-min {
+  @include md {
     font-size: 32px;
   }
 }
 
-@include desktop-min {
+@include lg {
   // 1 / 3 / 5 / ...
   .work:nth-child(odd) {
     .work__link {

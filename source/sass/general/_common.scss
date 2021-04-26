@@ -13,11 +13,12 @@ body {
   padding: 0;
   font-family: $font-main;
   line-height: 1.25;
-  font-size: 18px;
+  font-size: 16px;
   color: $grey;
   background-color: $grey-light;
-  @include mobile {
-    font-size: 16px;
+
+  @include sm {
+    font-size: 18px;
   }
 }
 

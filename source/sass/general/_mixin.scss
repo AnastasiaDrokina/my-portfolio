@@ -25,17 +25,56 @@
 }
 
 @mixin transitions($transitions...) {
-  $unfoldedTransitions:();
+  $unfoldedTransitions: ();
 
   @each $transition in $transitions {
-    $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+    $unfoldedTransitions: append(
+      $unfoldedTransitions,
+      unfoldTransition($transition),
+      comma
+    );
   }
 
   transition: $unfoldedTransitions;
 }
 
-
 // Media
+
+// >= 576
+@mixin sm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+// >= 768
+@mixin md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+// >= 992
+@mixin lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+// >= 1200
+@mixin xl {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+// >= 1400
+@mixin xxl {
+  @media (min-width: $xxl) {
+    @content;
+  }
+}
+
 @mixin desktop-min {
   @media (min-width: $width-desktop) {
     @content;

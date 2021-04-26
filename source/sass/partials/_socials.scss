@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @include tablet-min {
+  @include md {
     align-items: center;
   }
 }
