@@ -20,12 +20,10 @@
 .socials__link {
   display: inline-block;
 
-
-
   &:hover,
   &:focus {
     .socials__icon {
-      fill: $blue;
+      fill: $yellow;
     }
   }
 }

@@ -1,0 +1,50 @@
+.leading__wrapper {
+  display: flex;
+}
+
+.leading__info {
+  width: 39%;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.leading__profession {
+  color: $yellow;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  @include tablet {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+.leading__intro {
+  font-size: 20px;
+  line-height: 30px;
+
+  @include tablet {
+    max-width: 75%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @include mobile {
+    max-width: none;
+  }
+}
+
+.leading__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+  background: url("../img/yellow-bg.svg") no-repeat right;
+
+  @include tablet {
+    display: none;
+  }
+}

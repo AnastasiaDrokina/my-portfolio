@@ -1,264 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <include src="head.html"></include>
-  <title>Anastasia Drokina</title>
-</head>
+  <head>
+    <include src="head.html"></include>
+    <title>Anastasia Drokina</title>
+  </head>
 
-<body>
-  <header class="header">
-    <div class="container header__container">
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__wrapper">
+          <svg class="header__logo js-header-logo">
+            <use xlink:href="img/sprite_auto.svg#icon-cat"></use>
+          </svg>
+          <svg class="header__logo js-header-logo">
+            <use xlink:href="img/sprite_auto.svg#icon-matryoshka-doll"></use>
+          </svg>
+          <svg class="header__logo js-header-logo">
+            <use
+              xlink:href="img/sprite_auto.svg#icon-cathedral-of-saint-basil"
+            ></use>
+          </svg>
+          <svg class="header__logo js-header-logo">
+            <use xlink:href="img/sprite_auto.svg#icon-russian-hat"></use>
+          </svg>
+          <svg class="header__logo js-header-logo">
+            <use xlink:href="img/sprite_auto.svg#icon-eiffel-tower"></use>
+          </svg>
+          <svg class="header__logo js-header-logo">
+            <use xlink:href="img/sprite_auto.svg#icon-croissant"></use>
+          </svg>
+          <button class="header__toggle js-header-toggle" type="button">
+            <span class="visually-hidden">Open menu</span>
+          </button>
+        </div>
 
-      <div class="header__wrapper">
-        <svg class="header__logo js-header-logo">
-          <use xlink:href="img/sprite_auto.svg#icon-cat"></use>
-        </svg>
-        <svg class="header__logo js-header-logo">
-          <use xlink:href="img/sprite_auto.svg#icon-matryoshka-doll"></use>
-        </svg>
-        <svg class="header__logo js-header-logo">
-          <use xlink:href="img/sprite_auto.svg#icon-cathedral-of-saint-basil"></use>
-        </svg>
-        <svg class="header__logo js-header-logo">
-          <use xlink:href="img/sprite_auto.svg#icon-russian-hat"></use>
-        </svg>
-        <svg class="header__logo js-header-logo">
-          <use xlink:href="img/sprite_auto.svg#icon-eiffel-tower"></use>
-        </svg>
-        <svg class="header__logo js-header-logo">
-          <use xlink:href="img/sprite_auto.svg#icon-croissant"></use>
-        </svg>
-        <button class="header__toggle js-header-toggle" type="button">
-          <span class="visually-hidden">Open menu</span>
-        </button>
+        <nav class="header__nav js-header-nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link js-header-link" href="#work"
+                ><span class="visually-hidden">go to section &nbsp;</span
+                >Projects</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#about"
+                ><span class="visually-hidden">go to section &nbsp;</span
+                >About</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#skills"
+                ><span class="visually-hidden">go to section &nbsp;</span
+                >Skills</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts"
+                ><span class="visually-hidden">go to section &nbsp;</span
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <nav class="header__nav js-header-nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link js-header-link" href="#work"><span class="visually-hidden">go to section &nbsp;</span>work</a>
+    <main>
+      <section class="leading section">
+        <div class="container">
+          <div class="leading__wrapper">
+            <div class="leading__info">
+              <p class="leading__profession">front-end developer</p>
+              <h1 class="title title--first">
+                Hello, my name <br />
+                is Anastasia Drokina
+              </h1>
+              <p class="leading__intro">
+                Based in Nantes I like to code things from scratch, build for an
+                optimal user experience and test it on any device. I would be
+                glad to share with you my love for front-end development.
+              </p>
+              <!-- <p class="leading__intro">
+                Here are projects I've worked on recently. Want to see more?
+                <a class="link" href="#contacts">Email me :)</a>
+              </p> -->
+            </div>
+            <div class="leading__photo">
+              <picture>
+                <source type="image/webp" srcset="img/leading-photo.webp" />
+                <img
+                  class="about__img"
+                  src="img/leading-photo.png"
+                  alt="Photo of Anastasia Drokina"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="work">
+        <div class="container">
+          <h2 class="visually-hidden">My portfolio</h2>
+          <div class="portfolio__list">
+            <article class="portfolio__item work">
+              <a
+                class="work__link"
+                target="_blank"
+                href="https://anastasiadrokina.github.io/974019-keksobooking-17/"
+                title="Go to Keksobooking"
+              >
+                <picture>
+                  <source type="image/webp" srcset="img/keksobooking.webp" />
+                  <img
+                    src="img/keksobooking.jpg"
+                    width="350"
+                    height="400"
+                    alt="Image Keksobooking"
+                  />
+                </picture>
+              </a>
+              <div class="work__container">
+                <h3 class="work__title">Keksobooking</h3>
+                <p class="work__subtitle">
+                  I developed the search filter engine with JavaScript.
+                </p>
+                <h4>Technologies:</h4>
+                <p>HTML, CSS, JS, Gulp, Git.</p>
+                <h4>Designed by:</h4>
+                <p>HTML Academy</p>
+              </div>
+            </article>
+
+            <article class="portfolio__item work">
+              <a
+                class="work__link"
+                target="_blank"
+                href="https://anastasiadrokina.github.io/974019-cat-energy-16/"
+                title="Go to Cat Energy"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/cat-energy-index-desktop.webp"
+                  />
+                  <img
+                    src="img/cat-energy-index-desktop.jpg"
+                    width="350"
+                    height="400"
+                    alt="Image Cat Energy"
+                  />
+                </picture>
+              </a>
+              <div class="work__container">
+                <h3 class="work__title">Cat Energy</h3>
+                <p class="work__subtitle">
+                  An e-commerce website about cats and I loved it.
+                </p>
+                <h4>Technologies:</h4>
+                <p>HTML, CSS, JS, Gulp, Sass, responsive, Git.</p>
+                <h4>Designed by:</h4>
+                <p>HTML Academy</p>
+              </div>
+            </article>
+
+            <article class="portfolio__item work">
+              <a
+                class="work__link"
+                target="_blank"
+                href="https://anastasiadrokina.github.io/fitness-centre/"
+                title="Go to Supergym"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/fitnes-center-index.webp"
+                  />
+                  <img
+                    src="img/fitnes-center-index.jpg"
+                    width="350"
+                    height="400"
+                    alt="Image Supergym"
+                  />
+                </picture>
+              </a>
+              <div class="work__container">
+                <h3 class="work__title">Supergym</h3>
+                <p class="work__subtitle">Let's go to workout.</p>
+                <h4>Technologies:</h4>
+                <p>HTML, CSS, Gulp, Sass, responsive, Git.</p>
+                <h4>Designed by:</h4>
+                <p>HTML Academy</p>
+              </div>
+            </article>
+
+            <article class="portfolio__item work">
+              <a
+                class="work__link"
+                target="_blank"
+                href="https://anastasiadrokina.github.io/smart-device/"
+                title="Go to Smart Device"
+              >
+                <picture>
+                  <source type="image/webp" srcset="img/smart-device.webp" />
+                  <img
+                    src="img/smart-device.jpg"
+                    width="350"
+                    height="400"
+                    alt="Image Smart Device"
+                  />
+                </picture>
+              </a>
+              <div class="work__container">
+                <h3 class="work__title">Smart Device</h3>
+                <p class="work__subtitle">A one-page design.</p>
+                <h4>Technologies:</h4>
+                <p>HTML, CSS, Gulp, Sass, responsive, Git.</p>
+                <h4>Designed by:</h4>
+                <p>HTML Academy</p>
+              </div>
+            </article>
+
+            <article class="portfolio__item work">
+              <a
+                class="work__link"
+                target="_blank"
+                href="https://anastasiadrokina.github.io/974019-device-24/"
+                title="Go to Device"
+              >
+                <picture>
+                  <source type="image/webp" srcset="img/device-index.webp" />
+                  <img
+                    src="img/device-index.jpg"
+                    width="350"
+                    height="400"
+                    alt="Image Device"
+                  />
+                </picture>
+              </a>
+              <div class="work__container">
+                <h3 class="work__title">Device</h3>
+                <p class="work__subtitle">My first project.</p>
+                <h4>Technologies:</h4>
+                <p>HTML, CSS, JS, Git.</p>
+                <h4>Designed by:</h4>
+                <p>HTML Academy</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about__container">
+          <div class="about__text">
+            <h2 class="title title--section title--first">About me</h2>
+            <p class="section__text">
+              I love snow, winter and tea, because I come from Russia! <br />
+              I studied law in Russia, and I moved to France 4 years ago. During
+              this time, I managed to learn French and find my new passion for
+              bringing ideas to life in the browser.
+            </p>
+            <p>
+              I like to code things from scratch, build for an optimal user
+              experience and test it on any device.
+            </p>
+            <p>
+              I would be glad to share with you my love for front-end
+              development.
+            </p>
+
+            <a
+              class="link link--ghost"
+              target="_blank"
+              href="files/anastasia-drokina-cv.pdf"
+              >download my cv</a
+            >
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/Anastasia-Drokina.webp" />
+            <img
+              class="about__img"
+              src="img/Anastasia-Drokina.jpg"
+              alt="Photo of Anastasia Drokina"
+            />
+          </picture>
+        </div>
+
+        <div class="skills" id="skills">
+          <div class="container skills__container">
+            <div class="skills__col">
+              <h3 class="title title--section title--second">Experiences</h3>
+              <p class="skills__date">2019-2020 Liga A</p>
+              <p class="skills__description">
+                Front-end development (HTML, CSS, JavaScript) for clients in
+                several areas (e-commerce, web agencies, etc.). Team of
+                developers (front and back), project managers and testers.
+              </p>
+              <p class="skills__date">2018-2019 HTML Academy</p>
+              <p class="skills__description">
+                Online education to front-end development (HTML, CSS,
+                JavaScript).
+              </p>
+            </div>
+            <div class="skills__col">
+              <h3 class="title title--section title--second">Skills</h3>
+              <p class="skills__description">HTML / CSS / JS</p>
+              <p class="skills__description">Sass / Bootstrap / Gulp.js</p>
+              <p class="skills__description">Git / GitHub</p>
+            </div>
+            <div class="skills__col">
+              <h3 class="title title--section title--second">Languages</h3>
+              <p class="skills__description">English / French / Russian</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer contacts" id="contacts">
+      <div class="container section contacts__form">
+        <div class="contacts__col">
+          <h2 class="title title--section title--first">Write to me</h2>
+          <p class="section__text">Interested in working together?</p>
+          <p>Let's have a talk.</p>
+        </div>
+        <div class="contacts__col">
+          <div class="kwes-form">
+            <form
+              class="form"
+              method="POST"
+              action="https://kwes.io/api/foreign/forms/i8qQXnPMkgQXrFzhP6YG"
+            >
+              <label class="visually-hidden" for="name">Name</label>
+              <input
+                type="text"
+                name="name-field"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                type="email"
+                name="email-field"
+                id="email"
+                placeholder="Email"
+                required
+                rules="email"
+              />
+              <label class="visually-hidden" for="message">Your message</label>
+              <textarea
+                name="message-field"
+                id="message"
+                placeholder="Your message"
+                required
+              ></textarea>
+
+              <button class="btn btn--main" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container section footer__bottom">
+        <div>
+          <p class="copyright">© 2020 Anastasia Drokina</p>
+          <p class="quote">The only way to do great is to love what you do.</p>
+        </div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              target="_blank"
+              href="https://github.com/AnastasiaDrokina"
+              title="Go to my github"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#about"><span class="visually-hidden">go to section &nbsp;</span>about</a>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              target="_blank"
+              href="skype:amadare27?chat"
+              title="Go to my skype"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite_auto.svg#icon-skype"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#skills"><span class="visually-hidden">go to section &nbsp;</span>skills</a>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              target="_blank"
+              href="https://www.linkedin.com/in/anastasia-drokina-dessomme/"
+              title="Go to my linkedin"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite_auto.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#contacts"><span class="visually-hidden">go to section &nbsp;</span>contacts</a>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              target="_blank"
+              href="https://vk.com/id152972464"
+              title="Go to my VK"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <h1 class="title title--section title--first">Anastasia Drokina</h1>
-      <p>
-        Hello and welcome to my portfolio!<br>
-        My name is Anastasia and I am a front-end developer from Nantes.<br>
-      </p>
-      <p class="intro">Here are projects I've worked on recently. Want to see more? <a class="link" href="#contacts">Email me :)</a></p>
-    </div>
-
-    <section class="portfolio section" id="work">
-      <div class="container">
-        <h2 class="visually-hidden">My portfolio</h2>
-        <div class="portfolio__list">
-
-          <article class="portfolio__item work">
-            <a class="work__link" target="_blank" href="https://anastasiadrokina.github.io/974019-keksobooking-17/" title="Go to Keksobooking">
-              <picture>
-                <source type="image/webp" srcset="img/keksobooking.webp">
-                <img src="img/keksobooking.jpg" width="350" height="400" alt="Image Keksobooking">
-              </picture>
-            </a>
-            <div class="work__container">
-              <h3 class="work__title">Keksobooking</h3>
-              <p class="work__subtitle">I developed the search filter engine with JavaScript.</p>
-              <h4>Technologies:</h4>
-              <p>HTML, CSS, JS, Gulp, Git.</p>
-              <h4>Designed by:</h4>
-              <p>HTML Academy</p>
-            </div>
-          </article>
-
-          <article class="portfolio__item work">
-            <a class="work__link" target="_blank" href="https://anastasiadrokina.github.io/974019-cat-energy-16/" title="Go to Cat Energy">
-              <picture>
-                <source type="image/webp" srcset="img/cat-energy-index-desktop.webp">
-                <img src="img/cat-energy-index-desktop.jpg" width="350" height="400" alt="Image Cat Energy">
-              </picture>
-            </a>
-            <div class="work__container">
-              <h3 class="work__title">Cat Energy</h3>
-              <p class="work__subtitle">An e-commerce website about cats and I loved it.</p>
-              <h4>Technologies:</h4>
-              <p>HTML, CSS, JS, Gulp, Sass, responsive, Git.</p>
-              <h4>Designed by:</h4>
-              <p>HTML Academy</p>
-            </div>
-          </article>
-
-          <article class="portfolio__item work">
-            <a class="work__link" target="_blank" href="https://anastasiadrokina.github.io/fitness-centre/" title="Go to Supergym">
-              <picture>
-                <source type="image/webp" srcset="img/fitnes-center-index.webp">
-                <img src="img/fitnes-center-index.jpg" width="350" height="400" alt="Image Supergym">
-              </picture>
-            </a>
-            <div class="work__container">
-              <h3 class="work__title">Supergym</h3>
-              <p class="work__subtitle">Let's go to workout.</p>
-              <h4>Technologies:</h4>
-              <p>HTML, CSS, Gulp, Sass, responsive, Git.</p>
-              <h4>Designed by:</h4>
-              <p>HTML Academy</p>
-            </div>
-          </article>
-
-          <article class="portfolio__item work">
-            <a class="work__link" target="_blank" href="https://anastasiadrokina.github.io/smart-device/" title="Go to Smart Device">
-              <picture>
-                <source type="image/webp" srcset="img/smart-device.webp">
-                <img src="img/smart-device.jpg" width="350" height="400" alt="Image Smart Device">
-              </picture>
-            </a>
-            <div class="work__container">
-              <h3 class="work__title">Smart Device</h3>
-              <p class="work__subtitle">A one-page design.</p>
-              <h4>Technologies:</h4>
-              <p>HTML, CSS, Gulp, Sass, responsive, Git.</p>
-              <h4>Designed by:</h4>
-              <p>HTML Academy</p>
-            </div>
-          </article>
-
-          <article class="portfolio__item work">
-            <a class="work__link" target="_blank" href="https://anastasiadrokina.github.io/974019-device-24/" title="Go to Device">
-              <picture>
-                <source type="image/webp" srcset="img/device-index.webp">
-                <img src="img/device-index.jpg" width="350" height="400" alt="Image Device">
-              </picture>
-            </a>
-            <div class="work__container">
-              <h3 class="work__title">Device</h3>
-              <p class="work__subtitle">My first project.</p>
-              <h4>Technologies:</h4>
-              <p>HTML, CSS, JS, Git.</p>
-              <h4>Designed by:</h4>
-              <p>HTML Academy</p>
-            </div>
-          </article>
-        </div>
       </div>
-    </section>
+    </footer>
 
-    <section class="about section" id="about">
-      <div class="container about__container">
-        <div class="about__text">
-          <h2 class="title title--section title--first">About me</h2>
-          <p class="section__text">I love snow, winter and tea, because I come from Russia! <br>
-            I studied law in Russia, and I moved to France 4 years ago. During this time, I managed to learn French and find my new passion for bringing ideas to life in the browser.</p>
-          <p>I like to code things from scratch, build for an optimal user experience and test it on any device.</p>
-          <p>I would be glad to share with you my love for front-end development.</p>
-
-          <a class="link link--ghost" target="_blank" href="files/anastasia-drokina-cv.pdf">download my cv</a>
-        </div>
-        <picture>
-          <source type="image/webp" srcset="img/Anastasia-Drokina.webp">
-            <img class="about__img" src="img/Anastasia-Drokina.jpg" alt="Photo of Anastasia Drokina">
-        </picture>
-      </div>
-
-
-      <div class="skills" id="skills">
-        <div class="container skills__container">
-          <div class="skills__col">
-            <h3 class="title title--section title--second">Experiences</h3>
-            <p class="skills__date">2019-2020 Liga A</p>
-            <p class="skills__description">Front-end development (HTML, CSS, JavaScript) for clients in several areas (e-commerce, web agencies, etc.).
-              Team of developers (front and back), project managers and testers.</p>
-            <p class="skills__date">2018-2019 HTML Academy</p>
-            <p class="skills__description">Online education to front-end development (HTML, CSS, JavaScript).</p>
-          </div>
-          <div class="skills__col">
-            <h3 class="title title--section title--second">Skills</h3>
-            <p class="skills__description">HTML / CSS / JS</p>
-            <p class="skills__description">Sass / Bootstrap / Gulp.js</p>
-            <p class="skills__description">Git / GitHub</p>
-          </div>
-          <div class="skills__col">
-            <h3 class="title title--section title--second">Languages</h3>
-            <p class="skills__description">English / French / Russian</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer contacts" id="contacts">
-    <div class="container section contacts__form">
-      <div class="contacts__col">
-        <h2 class="title title--section title--first">Write to me</h2>
-        <p class="section__text">Interested in working together?</p>
-        <p>Let's have a talk.</p>
-      </div>
-      <div class="contacts__col">
-        <div class="kwes-form">
-          <form class="form" method="POST" action="https://kwes.io/api/foreign/forms/i8qQXnPMkgQXrFzhP6YG">
-            <label class="visually-hidden" for="name">Name</label>
-            <input type="text" name="name-field" id="name" placeholder="Name" required>
-            <label class="visually-hidden" for="email">Email</label>
-            <input type="email" name="email-field" id="email" placeholder="Email" required rules="email">
-            <label class="visually-hidden" for="message">Your message</label>
-            <textarea name="message-field" id="message" placeholder="Your message" required></textarea>
-
-            <button class="btn btn--main" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="container section footer__bottom">
-      <div>
-        <p class="copyright">© 2020 Anastasia Drokina</p>
-        <p class="quote">The only way to do great is to love what you do.</p>
-      </div>
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" target="_blank" href="https://github.com/AnastasiaDrokina" title="Go to my github">
-            <svg class="socials__icon">
-              <use xlink:href="img/sprite_auto.svg#icon-github"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" target="_blank" href="skype:amadare27?chat" title="Go to my skype">
-            <svg class="socials__icon">
-              <use xlink:href="img/sprite_auto.svg#icon-skype"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" target="_blank" href="https://www.linkedin.com/in/anastasia-drokina-dessomme/" title="Go to my linkedin">
-            <svg class="socials__icon">
-              <use xlink:href="img/sprite_auto.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" target="_blank" href="https://vk.com/id152972464" title="Go to my VK">
-            <svg class="socials__icon">
-              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
-  <include src="script.html"></include>
-</body>
+    <include src="script.html"></include>
+  </body>
 </html>

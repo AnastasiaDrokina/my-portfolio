@@ -5,7 +5,7 @@
 .btn--main {
   width: 100%;
   padding: 10px 20px;
-  background-color: $blue;
+  background-color: $yellow;
   color: $white;
   font-family: $font-secondary;
   text-transform: uppercase;
@@ -14,6 +14,6 @@
 
   &:hover,
   &:focus {
-    background-color: darken($blue, 10%);
+    background-color: darken($yellow, 10%);
   }
 }

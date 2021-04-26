@@ -1,32 +1,29 @@
 @font-face {
-  font-family: "DidactGothic-Regular";
+  font-family: "PlayfairDisplay-Bold";
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-display: swap;
-  src:
-    local("DidactGothic-Regular"),
-    url("../fonts/DidactGothic-Regular.woff2") format("woff2"),
-    url("../fonts/DidactGothic-Regular.woff") format("woff");
+  src: local("PlayfairDisplay-Bold"),
+    url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Arimo-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src:
-    local("Arimo-Regular"),
-    url("../fonts/Arimo-Regular.woff2") format("woff2"),
-    url("../fonts/Arimo-Regular.woff") format("woff");
-}
+// @font-face {
+//   font-family: "Arimo-Regular";
+//   font-style: normal;
+//   font-weight: normal;
+//   font-display: swap;
+//   src: local("Arimo-Regular"),
+//     url("../fonts/Arimo-Regular.woff2") format("woff2"),
+//     url("../fonts/Arimo-Regular.woff") format("woff");
+// }
 
 @font-face {
-  font-family: "Montserrat-Regular";
+  font-family: "Nunito-ExtraLight";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src:
-    local("Montserrat-Regular"),
-    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: local("Nunito-ExtraLight"),
+    url("../fonts/Nunito-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Nunito-ExtraLight.woff") format("woff");
 }
