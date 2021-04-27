@@ -3,37 +3,38 @@
 }
 
 .leading__info {
-  width: 39%;
+  width: 100%;
 
-  @include tablet {
-    width: 100%;
+  @include lg {
+    width: 39%;
   }
 }
 
 .leading__profession {
   color: $yellow;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 10px;
 
-  @include tablet {
-    margin-bottom: 10px;
-    font-size: 16px;
+  @include lg {
+    font-size: 18px;
   }
 }
 
 .leading__intro {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 100%;
+  margin-bottom: 10px;
 
-  @include tablet {
+  @include md {
     max-width: 75%;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 24px;
   }
 
-  @include mobile {
-    max-width: none;
+  @include lg {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -42,9 +43,10 @@
   top: 0;
   right: 0;
   z-index: -10;
+  display: none;
   background: url("../img/yellow-bg.svg") no-repeat right;
 
-  @include tablet {
-    display: none;
+  @include lg {
+    display: block;
   }
 }

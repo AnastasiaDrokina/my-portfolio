@@ -1,7 +1,7 @@
 .quote {
-  margin: 0 0 40px 0;
-  font-style: italic;
-  color: $grey;
+  margin: 0 0 30px 0;
+  color: $black;
+  font-family: $font-secondary;
 
   @include md {
     margin-bottom: 0;
