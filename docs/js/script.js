@@ -7,22 +7,20 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  (function () {
-    var anchors = document.querySelectorAll("a[href^=\"#\"]");
-    anchors.forEach(function (anchor) {
-      anchor.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        var href = anchor.getAttribute("href");
-        var target = document.querySelector(href);
+  var anchors = document.querySelectorAll("a[href^=\"#\"]");
+  anchors.forEach(function (anchor) {
+    anchor.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      var href = anchor.getAttribute("href");
+      var target = document.querySelector(href);
 
-        if (target) {
-          target.scrollIntoView({
-            behavior: "smooth"
-          });
-        }
-      });
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
     });
-  })();
+  });
 };
 
 exports.default = _default;
