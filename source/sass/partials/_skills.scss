@@ -30,4 +30,8 @@
 
 .skills__description {
   margin-bottom: 30px;
+
+  @include md {
+    margin-bottom: 40px;
+  }
 }

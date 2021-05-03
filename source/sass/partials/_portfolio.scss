@@ -1,5 +1,6 @@
 .portfolio {
   h2 {
+    margin-bottom: 16px;
     @include md {
       margin-bottom: 25px;
     }

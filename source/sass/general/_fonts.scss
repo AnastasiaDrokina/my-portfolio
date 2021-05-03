@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "PlayfairDisplay-Bold";
+  font-family: "PlayfairDisplay";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-display: swap;
   src: local("PlayfairDisplay-Bold"),
     url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
@@ -19,11 +19,11 @@
 }
 
 @font-face {
-  font-family: "Nunito-ExtraLight";
+  font-family: "Nunito";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local("Nunito-ExtraLight"),
-    url("../fonts/Nunito-ExtraLight.woff2") format("woff2"),
-    url("../fonts/Nunito-ExtraLight.woff") format("woff");
+  src: local("NunitoSans-Regular"),
+    url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Regular.woff") format("woff");
 }
