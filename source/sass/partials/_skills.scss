@@ -35,3 +35,12 @@
     margin-bottom: 40px;
   }
 }
+
+.skills__link {
+  text-decoration: none;
+  transition: all 0.3s;
+  &:hover,
+  &:focus {
+    color: $yellow;
+  }
+}

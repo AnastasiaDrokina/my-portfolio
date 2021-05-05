@@ -1,6 +1,10 @@
 .portfolio {
+  @include lg {
+    padding-top: 50px;
+  }
   h2 {
     margin-bottom: 16px;
+
     @include md {
       margin-bottom: 25px;
     }
@@ -11,10 +15,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-left: -13px;
-  margin-right: -13px;
 
   @include md {
+    margin-left: -13px;
+    margin-right: -13px;
     flex-direction: row;
   }
 }

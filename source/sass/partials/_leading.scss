@@ -4,8 +4,10 @@
 
 .leading__info {
   width: 100%;
+  text-align: center;
 
   @include lg {
+    text-align: left;
     width: 49%;
   }
 }
@@ -28,13 +30,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  @include md {
-    max-width: 75%;
-  }
-
   @include lg {
-    max-width: 100%;
-    margin: 0 0 10px 0;
     font-size: 20px;
     line-height: 30px;
   }
