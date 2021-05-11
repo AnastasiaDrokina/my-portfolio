@@ -34,23 +34,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  var logos = document.querySelectorAll(".js-header-logo");
-  var logosLength = logos.length;
-  var randomNumber = Math.floor(Math.random() * logosLength);
-  logos[randomNumber].classList.add("is-active");
-};
-
-exports.default = _default;
-
-},{}],3:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _default = function _default() {
   var btnToggle = document.querySelector(".js-header-toggle");
   var menuNav = document.querySelector(".js-header-nav");
   var menuLinks = document.querySelectorAll(".js-header-link"); // Open and close menu
@@ -77,58 +60,16 @@ var _default = function _default() {
 
 exports.default = _default;
 
-},{}],4:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _default = function _default() {
-  var works = document.querySelectorAll(".work");
-  works.forEach(function (work) {
-    var workLink = work.querySelector(".work__link");
-    var workContainer = work.querySelector(".work__container");
-
-    var workOff = function workOff() {
-      work.classList.remove("is-hover");
-      workContainer.removeEventListener("transitionend", workOff);
-    };
-
-    var workOn = function workOn() {
-      work.classList.add("is-hover");
-    };
-
-    var workTransitionEnd = function workTransitionEnd() {
-      workContainer.addEventListener("transitionend", workOff);
-    };
-
-    workLink.addEventListener("mouseenter", workOn);
-    workLink.addEventListener("focus", workOn);
-    workLink.addEventListener("mouseleave", workTransitionEnd);
-    workLink.addEventListener("blur", workTransitionEnd);
-  });
-};
-
-exports.default = _default;
-
-},{}],5:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 "use strict";
 
 var _menu = _interopRequireDefault(require("./modules/menu.js"));
-
-var _logo = _interopRequireDefault(require("./modules/logo.js"));
-
-var _work = _interopRequireDefault(require("./modules/work.js"));
 
 var _anchors = _interopRequireDefault(require("./modules/anchors.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _menu.default)();
-(0, _logo.default)();
-(0, _work.default)();
 (0, _anchors.default)();
 
-},{"./modules/anchors.js":1,"./modules/logo.js":2,"./modules/menu.js":3,"./modules/work.js":4}]},{},[5]);
+},{"./modules/anchors.js":1,"./modules/menu.js":2}]},{},[3]);

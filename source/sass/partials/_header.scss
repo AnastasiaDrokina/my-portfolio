@@ -2,7 +2,7 @@
   padding: 15px 0;
 
   @include lg {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 }
 
@@ -25,22 +25,24 @@
 
   @include sm {
     width: auto;
-    margin-bottom: 10px;
+  }
+}
+
+.header__logo-link {
+  @include transitions(fill);
+  &:hover,
+  &:focus {
+    fill: $yellow;
   }
 }
 
 .header__logo {
-  display: none;
+  width: 40px;
+  height: 40px;
 
-  &.is-active {
-    display: block;
-    width: 40px;
-    height: 40px;
-
-    @include sm {
-      width: 70px;
-      height: 70px;
-    }
+  @include sm {
+    width: 60px;
+    height: 60px;
   }
 }
 
