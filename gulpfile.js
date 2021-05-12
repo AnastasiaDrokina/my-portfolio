@@ -121,7 +121,7 @@ function copy() {
       `source/fonts/**/*.{woff,woff2}`,
       `source/img/**`,
       `source/files/**`,
-      `source//*.ico`,
+      `source//*.{ico,png,svg,webmanifest,xml}`,
     ],
     {
       base: `source`,
