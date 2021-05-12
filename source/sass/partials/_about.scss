@@ -1,7 +1,7 @@
 .about__container {
   padding-bottom: 30px;
 
-  @include md {
+  @include lg {
     display: flex;
     padding-bottom: 60px;
   }
@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @include md {
+  @include lg {
     width: 50%;
     margin-bottom: 35px;
     margin-right: auto;
