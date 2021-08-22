@@ -9,12 +9,12 @@
     @include transitions(border);
 
     &::placeholder {
-      color: $grey;
+      color: $black-main;
     }
 
     &:focus {
       outline: none;
-      border-color: $grey;
+      border-color: $black-main;
     }
   }
 
