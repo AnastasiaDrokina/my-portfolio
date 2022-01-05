@@ -1,7 +1,6 @@
 const { series, src, dest, watch } = require(`gulp`);
 const plumber = require(`gulp-plumber`);
-const sass = require(`gulp-sass`);
-sass.compiler = require(`node-sass`);
+const sass = require("gulp-sass")(require("sass"));
 const sourcemaps = require(`gulp-sourcemaps`);
 const rename = require(`gulp-rename`);
 const postcss = require(`gulp-postcss`);
