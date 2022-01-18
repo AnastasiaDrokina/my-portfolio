@@ -1,15 +1,35 @@
-Краткая инструкция по работе
+# My portfolio
 
-Для начала работы у вас должен быть установлен:
-- Node.js v.10.15.3
-- Gulp v4
-- npm last version
+## Setup
 
-Основные команды для работы
-- Установка - npm i
-- Запуск локального сервера - npm start
-- Сборка проекта без запуска локального сервера - npm run build
-- Запуск тестирования на соответствия код-гайдам - npm test
+### Prerequisites
 
-Все разработка ведётся в директории source
-Итоговый код попадает в директорию build
+- [git](https://git-scm.com/)
+- [node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+
+To verify it, you can run this:
+
+```
+git --version
+node --version
+npm --version
+```
+
+### Installation
+
+```
+git clone https://github.com/AnastasiaDrokina/my-portfolio
+cd my-portfolio
+npm install
+```
+
+To start the app, run:
+
+```
+npm start
+```
+
+## Deployment
+
+Deployed on [GitHub Pages](https://pages.github.com/)
