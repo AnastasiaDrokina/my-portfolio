@@ -27,3 +27,9 @@
 .about__img {
   border-radius: 15px;
 }
+
+.about__actions {
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}

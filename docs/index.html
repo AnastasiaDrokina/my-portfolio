@@ -47,16 +47,16 @@
                 About
               </a>
             </li>
-            <li class="header__item">
-              <a class="header__link" href="#skills">
-                <span class="visually-hidden">Go to &nbsp;</span>
-                Skills
-              </a>
-            </li>
+            <!-- <li class="header__item">
+							<a class="header__link" href="#skills">
+								<span class="visually-hidden">Go to &nbsp;</span>
+								Skills
+							</a>
+						</li> -->
             <li class="header__item">
               <a class="header__link" href="#contacts">
                 <span class="visually-hidden">Go to &nbsp;</span>
-                Contacts
+                Contact
               </a>
             </li>
           </ul>
@@ -84,15 +84,15 @@
               <a class="btn btn--sm btn--main" href="#contacts">Email me</a>
             </div>
             <!-- <div class="leading__photo">
-              <picture>
-                <source type="image/webp" srcset="img/leading-photo.webp" />
-                <img
-                  class="leading__photo-img"
-                  src="img/leading-photo.png"
-                  alt=""
-                />
-              </picture>
-            </div> -->
+						              <picture>
+						                <source type="image/webp" srcset="img/leading-photo.webp" />
+						                <img
+						                  class="leading__photo-img"
+						                  src="img/leading-photo.png"
+						                  alt=""
+						                />
+						              </picture>
+						            </div> -->
           </div>
         </div>
       </section>
@@ -266,7 +266,7 @@
             <p class="section__text">
               I love snow, winter and tea, because I come from Russia!
               <br>
-              I studied law in Russia, and I moved to France 5 years ago. During
+              I studied law in Russia, and I moved to France 6 years ago. During
               this time, I managed to learn French and find my new passion for
               bringing ideas to life in the browser.
             </p>
@@ -275,12 +275,17 @@
               experience and test it on any device. I would be glad to share
               with you my love for front-end development.
             </p>
-            <a class="btn btn--main btn--sm" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1XV3pUo4Bm4eRfCejQ_tHKDipR2QxgnTP/view?usp=sharing">
-              Download my CV
-              <span class="visually-hidden">
-                Pdf, 154Ko, open in new window
-              </span>
-            </a>
+            <div class="about__actions">
+              <a class="btn btn--main btn--sm" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1XV3pUo4Bm4eRfCejQ_tHKDipR2QxgnTP/view?usp=sharing">
+                Download my CV
+                <span class="visually-hidden">
+                  Pdf, 154Ko, open in new window
+                </span>
+              </a>
+              <a class="btn btn--main btn--sm" target="_blank" rel="noopener" href="https://www.linkedin.com/in/anastasia-drokina-dessomme/">
+                My LinkedIn profile
+              </a>
+            </div>
           </div>
           <picture class="about__wrapper-img">
             <source type="image/webp" srcset="img/Anastasia-Drokina.webp">
@@ -288,54 +293,60 @@
           </picture>
         </div>
 
-        <div class="skills" id="skills">
-          <div class="container">
-            <div class="skills__col">
-              <h3 class="title title--section title--second">
-                Work experience
-              </h3>
-              <div class="skills__inner">
-                <p class="skills__date">2020-2021 European Soft</p>
-                <p class="skills__description">
-                  Front-end development (HTML, CSS, JavaScript) with Laravel
-                  templating, maintenance and evolutions of the
-                  <a class="skills__link" href="https://www.logisneuf.com/" title="Go to Logisneuf.com" target="_blank" rel="noopener">
-                    commercial website.
-                  </a>
-                  Emailing.
-                </p>
-                <p class="skills__date">2019-2020 Liga A</p>
-                <p class="skills__description">
-                  Front-end development (HTML, CSS, JavaScript) for clients in
-                  several areas (e-commerce, web agencies, etc.). Team of
-                  developers (front and back), project managers and testers.
-                </p>
-                <p class="skills__date">2018-2019 HTML Academy</p>
-                <p class="skills__description">
-                  Online education to front-end development (HTML, CSS,
-                  JavaScript).
-                </p>
-              </div>
-            </div>
-            <div class="skills__col">
-              <h3 class="title title--section title--second">Skills</h3>
-              <div class="skills__inner">
-                <p class="skills__description">HTML / CSS / JS / React</p>
-                <p class="skills__description">
-                  Sass / Bootstrap / Gulp.js / Twig
-                </p>
-                <p class="skills__description">Git / GitHub</p>
-                <p class="skills__description">Mailing</p>
-              </div>
-            </div>
-            <div class="skills__col">
-              <h3 class="title title--section title--second">Languages</h3>
-              <div class="skills__inner">
-                <p class="skills__description">English / French / Russian</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- <div class="skills" id="skills">
+				          <div class="container">
+				            <div class="skills__col">
+				              <h3 class="title title--section title--second">
+				                Work experience
+				              </h3>
+				              <div class="skills__inner">
+				                <p class="skills__date">2020-2021 European Soft</p>
+				                <p class="skills__description">
+				                  Front-end development (HTML, CSS, JavaScript) with Laravel
+				                  templating, maintenance and evolutions of the
+				                  <a
+				                    class="skills__link"
+				                    href="https://www.logisneuf.com/"
+				                    title="Go to Logisneuf.com"
+				                    target="_blank"
+				                    rel="noopener"
+				                  >
+				                    commercial website.
+				                  </a>
+				                  Emailing.
+				                </p>
+				                <p class="skills__date">2019-2020 Liga A</p>
+				                <p class="skills__description">
+				                  Front-end development (HTML, CSS, JavaScript) for clients in
+				                  several areas (e-commerce, web agencies, etc.). Team of
+				                  developers (front and back), project managers and testers.
+				                </p>
+				                <p class="skills__date">2018-2019 HTML Academy</p>
+				                <p class="skills__description">
+				                  Online education to front-end development (HTML, CSS,
+				                  JavaScript).
+				                </p>
+				              </div>
+				            </div>
+				            <div class="skills__col">
+				              <h3 class="title title--section title--second">Skills</h3>
+				              <div class="skills__inner">
+				                <p class="skills__description">HTML / CSS / JS / React</p>
+				                <p class="skills__description">
+				                  Sass / Bootstrap / Gulp.js / Twig
+				                </p>
+				                <p class="skills__description">Git / GitHub</p>
+				                <p class="skills__description">Mailing</p>
+				              </div>
+				            </div>
+				            <div class="skills__col">
+				              <h3 class="title title--section title--second">Languages</h3>
+				              <div class="skills__inner">
+				                <p class="skills__description">English / French / Russian</p>
+				              </div>
+				            </div>
+				          </div>
+				        </div> -->
       </section>
     </main>
 
@@ -382,8 +393,8 @@
           </li>
 
           <li class="socials__item">
-            <a class="socials__link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/anastasia-drokina-dessomme/" title="Go to my Linkedin">
-              <span class="visually-hidden">Go to my Linkedin</span>
+            <a class="socials__link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/anastasia-drokina-dessomme/" title="Go to my LinkedIn">
+              <span class="visually-hidden">Go to my LinkedIn</span>
               <svg class="socials__icon">
                 <use xlink:href="img/sprite_auto.svg#icon-linkedin"></use>
               </svg>
